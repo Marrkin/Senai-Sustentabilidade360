@@ -60,6 +60,7 @@ h2 { font-size: clamp(2.25rem,3vw,3rem); font-weight: 700; line-height: 1.08; le
 .credits h2 { font-size: 1.4rem; margin-bottom: 13px; }
 .credits p, .credits ul { color: var(--muted); }
 .credits ul { list-style: none; padding: 0; }
+.repository-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 12px; color: var(--red); font-size: .9375rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 dialog { width: min(520px,92vw); max-height: 90dvh; padding: 0; border: none; color: var(--ink); border-radius: 6px; box-shadow: 0 12px 80px #1115; }
 dialog::backdrop { background: #171a19ba; }
 .detail-picture { height: 140px; position: relative; background: #ddd; }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Box, Layers3, ScanLine } from "lucide-react";
+import { Box, Github, Layers3, ScanLine } from "lucide-react";
 import Scenarios from "./scenarios";
 
 const members = ["Bruno Henrique da Silva", "Marcos Sergio Garcia Filho", "Paulo Cesar Viana"];
@@ -45,17 +45,20 @@ export default function Home() {
             <Scenarios />
           </div>
         </section>
-        <section className="wrap credits" aria-labelledby="projeto">
-          <div>
-            <h2 id="projeto">O projeto</h2>
-            <p>O Sustentabilidade360 nasceu no projeto de Extensão 2 do curso superior de Mecatrônica do SENAI. O tema vem do nosso dia a dia na Mtech Premoldados e de uma pergunta comum na fábrica e na obra: o que fazer com o concreto que sobra?</p>
-          </div>
-          <div>
-            <h2 id="equipe">Equipe</h2>
-            <ul>{members.map(member => <li key={member}>{member}</li>)}</ul>
-          </div>
-        </section>
       </main>
+      <footer className="wrap credits">
+        <div>
+          <h2 id="projeto">O projeto</h2>
+          <p>O Sustentabilidade360 nasceu no projeto de Extensão 2 do curso superior de Mecatrônica do SENAI. O tema vem do nosso dia a dia na Mtech Premoldados e de uma pergunta comum na fábrica e na obra: o que fazer com o concreto que sobra?</p>
+          <a className="repository-link" href="https://github.com/Marrkin/Senai-Sustentabilidade360">
+            <Github size={17} aria-hidden="true" /> Ver projeto no GitHub
+          </a>
+        </div>
+        <div>
+          <h2 id="equipe">Equipe</h2>
+          <ul>{members.map(member => <li key={member}>{member}</li>)}</ul>
+        </div>
+      </footer>
     </>
   );
 }
